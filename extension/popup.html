@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>FDM for Safari</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon-32.png" width="32" height="32" alt="">
+    <div>
+      <strong>FDM for Safari</strong>
+      <p id="status">Checking Free Download Manager…</p>
+    </div>
+  </header>
+  <label class="row"><input id="paused" type="checkbox"> Pause capturing</label>
+  <label class="row"><input id="inspect" type="checkbox"> Check ordinary links before opening them</label>
+  <p class="hint">File links, magnet links, and links with a download attribute go to Free Download Manager. The second option also asks the server about other links, which makes clicks a little slower.</p>
+  <div class="actions">
+    <button id="skip" type="button">Don’t catch this site</button>
+    <button id="page" type="button">Download this page</button>
+    <button id="retry" type="button">Reconnect</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
